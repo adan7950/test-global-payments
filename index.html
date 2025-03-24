@@ -3,9 +3,9 @@
         <script src="https://js.paygateway.com/secure_payment/v1/globalpayments.js"></script>
 	<style>
 	    body {
-	        display: flex;
-	        flex-direction: column;
-	        font-family: Arial, sans-serif;
+		display: flex;
+		flex-direction: column;
+		font-family: Arial, sans-serif;
 	    }
 	
 	    .row-form {
@@ -24,6 +24,9 @@
 		margin-right: 10px;
 		width: 150px;
 	    }
+	    .redBox {
+		    color: red;
+	    }
 	
 	    #openEdgeErrors {
 	        display: none;
@@ -38,7 +41,7 @@
 	    </div>
 	
 	    <div class="row-form">
-		<label class="label">Expiration Date</label>
+		<label class="label">Expiration Date<span class="redbox">*</span></label>
 	    	<div><div id="card-expiration"></div></div>
 	    </div>
 	
