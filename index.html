@@ -1,44 +1,56 @@
 <!doctype html>
 <head>
         <script src="https://js.paygateway.com/secure_payment/v1/globalpayments.js"></script>
+	<style>
+        .row-form {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin: 10px 0;
+        }
+
+        .label {
+            font-size: 16px;
+            color: #333;
+            margin-right: 10px;
+        }
+
+        #openEdgeErrors {
+            display: none;
+            color: #ff8282;
+        }
+    </style>
 </head>
 	<body>
-         <div>
-            <div>
-                <label>Credit Card Number</label>
-                <div>
-                    <div id="card-number"></div>
-                </div>
-            </div>
-        </div>
+	    <div class="row-form">
+		<label class="label">Credit Card Number</label>
+		<div>
+		    <div id="card-number" />
+		</div>
+	    </div>
+	
+	    <div class="row-form">
+		<label class="label">Expiration Date</label>
+		<div>
+		    <div id="card-expiration" />
+		</div>
+	    </div>
+	
+	    <div class="row-form">
+		<label class="label">CVV</label>
+		<div>
+		    <div id="card-cvv" />
+		</div>
+	    </div>
 
-        <div>
-            <div>
-                <label>Expiration Date</label>
-                <div>
-                    <div id="card-expiration"></div>
-                </div>
-            </div>
-        </div>
+	    <div class="row-form">
+		<div>
+		    <div id="submit" />
+		</div>
+	    </div>
 
-        <div>
-            <div>
-                <label>CVV</label>
-                <div>
-                    <div id="card-cvv"></div>
-                </div>
-            </div>
-        </div>
-        <div>
-            <div>
-                <label>&nbsp;</label>
-                <div>
-                    <div id="submit"></div>
-                </div>
-            </div>
-        </div>
-        <div">
-            <div id="openEdgeErrors" style="display:none;color:#ff8282"></div>
+	<div>
+            <div id="openEdgeErrors"></div>
         </div>
         </body>
 </html>
