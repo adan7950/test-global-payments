@@ -2,57 +2,50 @@
 <head>
         <script src="https://js.paygateway.com/secure_payment/v1/globalpayments.js"></script>
 	<style>
-	body {
-            display: flex;
-            flex-direction: row;
-            padding: 20px;
-            font-family: Arial, sans-serif;
-        }
-        .row-form {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            margin: 10px 0;
-        }
-
-        .label {
-            font-size: 16px;
-            color: #333;
-            margin-right: 10px;
-        }
-
-        #openEdgeErrors {
-            display: none;
-            color: #ff8282;
-        }
-    </style>
+	    body {
+	        display: flex;
+	        flex-direction: column;
+	        padding: 20px;
+	        font-family: Arial, sans-serif;
+	        background-color: #f9f9f9;
+	    }
+	
+	    .row-form {
+	        display: flex;
+	        flex-direction: column;
+	        margin-bottom: 15px;
+	    }
+	
+	    .label {
+	        font-size: 16px;
+	        color: #333;
+	        margin-bottom: 5px;
+	    }
+	
+	    #openEdgeErrors {
+	        display: none;
+	        color: #ff8282;
+	    }
+	</style>
 </head>
 	<body>
 	    <div class="row-form">
 		<label class="label">Credit Card Number</label>
-		<div>
-		    <div id="card-number" />
-		</div>
+	    	<div id="card-number" />
 	    </div>
 	
 	    <div class="row-form">
 		<label class="label">Expiration Date</label>
-		<div>
-		    <div id="card-expiration" />
-		</div>
+	    	<div id="card-expiration" />
 	    </div>
 	
 	    <div class="row-form">
 		<label class="label">CVV</label>
-		<div>
-		    <div id="card-cvv" />
-		</div>
+	    	<div id="card-cvv" />
 	    </div>
 
 	    <div class="row-form">
-		<div>
-		    <div id="submit" />
-		</div>
+	    	<div id="submit" />
 	    </div>
 
 	<div>
