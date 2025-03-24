@@ -1,62 +1,63 @@
 <!doctype html>
 <head>
-        <script src="https://js.paygateway.com/secure_payment/v1/globalpayments.js"></script>
-	<style>
-	    body {
-		display: flex;
-		flex-direction: column;
-		font-family: Arial, sans-serif;
-		border: 1px solid red;
-	    }
-	
-	    .row-form {
-	        display: flex;
-	        flex-direction: row;
-		align-items: center;
-	        margin-bottom: 15px;
-		align-self: center;
-		max-width: 50%;
-	    }
-	
-	    .label {
-	        font-size: 16px;
-	        color: #333;
-	        margin-bottom: 5px;
-		margin-right: 10px;
-		width: 150px;
-	    }
-	    .red-box {
-		    color: red;
-	    }
-	
-	    #openEdgeErrors {
-	        display: none;
-	        color: #ff8282;
-	    }
-	</style>
+    <script src="https://js.paygateway.com/secure_payment/v1/globalpayments.js"></script>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            font-family: Arial, sans-serif;
+            border: 1px solid red;
+        }
+
+        .row-form {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: 15px;
+            align-self: center;
+            max-width: 50%;
+        }
+
+        .label {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 5px;
+            margin-right: 10px;
+            width: 150px;
+	    display: inline-block;
+        }
+        .red-box {
+            color: red;
+        }
+
+        #openEdgeErrors {
+            display: none;
+            color: #ff8282;
+        }
+    </style>
 </head>
-	<body>
-	    <div class="row-form">
-		<label class="label">Credit Card Number<span class="red-box">&nbsp*</span></label>
-	    	<div><div id="card-number"></div></div>
-	    </div>
-	
-	    <div class="row-form">
-		<label class="label">Expiration Date<span class="red-box">&nbsp*</span></label>
-	    	<div><div id="card-expiration"></div></div>
-	    </div>
-	
-	    <div class="row-form">
-		<label class="label">CVV<span class="red-box">&nbsp*</span></label>
-	    	<div><div id="card-cvv"></div></div>
-	    </div>
+<body>
+    <div class="row-form">
+        <label class="label">Credit Card Number<span class="red-box">&nbsp*</span></label>
+        <div><div id="card-number"></div></div>
+    </div>
 
-	    <div class="row-form">
-	    	<div><div id="submit"></div></div>
-	    </div>
+    <div class="row-form">
+        <label class="label">Expiration Date<span class="red-box">&nbsp*</span></label>
+        <div><div id="card-expiration"></div></div>
+    </div>
 
-	<div>
-            <div id="openEdgeErrors"></div>
-        </div>
-        </body>
+    <div class="row-form">
+        <label class="label">CVV<span class="red-box">&nbsp*</span></label>
+        <div><div id="card-cvv"></div></div>
+    </div>
+
+    <div class="row-form">
+        <div><div id="submit"></div></div>
+    </div>
+
+    <div>
+        <div id="openEdgeErrors"></div>
+    </div>
+</body>
 </html>
