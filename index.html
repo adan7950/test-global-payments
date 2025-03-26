@@ -1,7 +1,4 @@
-<!doctype html>
-<head>
-    <script src="https://js.paygateway.com/secure_payment/v1/globalpayments.js"></script>
-  <style>
+<style>
     body {
         display: flex;
         flex-direction: column;
@@ -16,6 +13,10 @@
         align-items: center;
         margin-bottom: 15px;
         width: 93%;
+    }
+
+    .row-form > div:last-child {
+        margin-left: 20px; /* Space between label and input */
     }
 
     .label {
@@ -38,30 +39,3 @@
         color: #ff8282;
     }
 </style>
-
-</head>
-<body>
-    <div class="row-form">
-        <label class="label">Credit Card Number<span class="red-box">&nbsp*</span></label>
-        <div><div id="card-number"></div></div>
-    </div>
-
-    <div class="row-form">
-        <label class="label">Expiration Date<span class="red-box">&nbsp*</span></label>
-        <div><div id="card-expiration"></div></div>
-    </div>
-
-    <div class="row-form">
-        <label class="label">CVV<span class="red-box">&nbsp*</span></label>
-        <div><div id="card-cvv"></div></div>
-    </div>
-
-    <div class="row-form">
-        <div><div id="submit"></div></div>
-    </div>
-
-    <div>
-        <div id="openEdgeErrors"></div>
-    </div>
-</body>
-</html>
