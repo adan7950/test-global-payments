@@ -17,6 +17,25 @@
         max-width: 500px;
     }
 
+   .row-form.submit-row {
+        justify-content: center; /* center the submit button */
+        margin-top: 20px; /* add some space above */
+    }
+
+    .row-form.submit-row #submit {
+        background-color: #4CAF50; /* green background */
+        color: white; /* white text */
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        text-align: center;
+    }
+
+/* Optional: Add hover effect */
+.row-form.submit-row #submit:hover {
+    background-color: #45a049;
+}
+
     .label {
         font-size: 16px;
         color: #333;
@@ -54,7 +73,7 @@
         <div><div id="card-cvv"></div></div>
     </div>
 
-    <div class="row-form">
+    <div class="row-form submit-row">
         <div><div id="submit"></div></div>
     </div>
 
